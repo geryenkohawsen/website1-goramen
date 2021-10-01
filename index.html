@@ -4,8 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>MyRamen</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<title>GORAMEN</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="css/styles.css">
 
 	<title>Hello, world!</title>
@@ -14,10 +15,10 @@
 <body>
 
 	<!-- NAVBAR START -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg py-2 sticky-top navbar-light bg-light">
 		<div class="container">
 			<a class="navbar-brand" href="#">
-				<img class="rounded float-start " src="img/goramenlogo.png" alt="goramen-logo">
+				<img class="goramen-logo float-start" src="img/goramenlogo.png" alt="goramen-logo">
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,16 +27,96 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="#">Home</a>
+						<a class="nav-link" href="#home">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Services</a>
+						<a class="nav-link" href="#ramen">Ramen</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Features</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Pricing</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Team</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
 					</li>
 				</ul>
+				<button class="btn btn-primary ms-lg-3">Sign Up</button>
 			</div>
 		</div>
 	</nav>
 	<!-- NAVBAR END -->
+
+	<!-- HOME START -->
+	<div class="home vh-100 d-flex align-items-center" id="home">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 mx-auto text-center">
+					<h1 class="display-4 text-white">For ramen and only ramen</h1>
+					<p class="text-white my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis
+						dui accumsan euismod pretium. Etiam libero massa, imperdiet sit amet arcu vitae, luctus commodo
+						est. Fusce dignissim aliquam posuere. In dictum mauris nec nunc egestas posuere. Fusce in
+						blandit leo.</p>
+					<a href="#" class="btn me-2 btn-primary">Get Ramen</a>
+					<a href="#" class="btn btn-outline-light">Get Tsukemen</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- HOME END -->
+
+	<!-- RAMEN START -->
+	<section id="ramen">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md-8 mx-auto text-center">
+					<h6 class="text-primary">RAMEN</h6>
+					<h1>Why Ramen?</h1>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci temporibus vero voluptatum soluta dicta, reiciendis molestias tempora nostrum similique nesciunt?</p>
+				</div>
+			</div>
+			<div class="row g-4">
+				<div class="col-lg-4 col-sm-6">
+					<div class="ramen card-effect">
+						<div class="iconbox">
+							<i class='bx bxs-heart'></i>
+						</div>
+						<h5 class="mt-4 mb-2">Soup</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptas?</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="ramen card-effect">
+						<div class="iconbox">
+							<i class='bx bxs-hand'></i>
+						</div>
+						<h5 class="mt-4 mb-2">Noodle</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptas?</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-12">
+					<div class="ramen card-effect">
+						<div class="iconbox">
+							<i class='bx bx-restaurant'></i>
+						</div>
+						<h5 class="mt-4 mb-2">Toppings</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptas?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 
 
 

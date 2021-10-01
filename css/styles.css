@@ -1,0 +1,133 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+
+/* BASE STYLES */
+:root {
+    --primary: #0d6efd;
+    --dark: #21252f;
+    --body: #888;
+    --box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    line-height: 1.7;
+    color: var(--body);
+}
+
+h1,h2,h3,h4,h5,h6,.display-4 {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.btn {
+    padding: 14px 18px;
+    border-width: 2px;
+    border-radius: 0;
+}
+
+/* NAVBAR */
+
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+.navbar .goramen-logo {
+    width: 300px;
+    height: 80px;
+}
+
+.navbar .nav-link {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* MAIN CONTENT */
+.home {
+    background-image: url(../img/home-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+.home::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(15, 15, 15, 0.5);
+    z-index: -1;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.card-effect {
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    padding: 25px;
+    transition: all 0.35s ease;
+}
+
+.card-effect:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.iconbox {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 32px;
+    border-radius: 100px;
+
+}
+
+.ramen {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.ramen::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: var(--primary);
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.ramen:hover .iconbox {
+    background-color: #fff;
+    color: var(--primary);
+}
+
+.ramen:hover h5,
+.ramen:hover p {
+    color: #fff;
+}
+
+.ramen:hover::after {
+    opacity: 1;
+    top: 0;
+}
