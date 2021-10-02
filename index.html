@@ -15,10 +15,10 @@
 <body>
 
 	<!-- NAVBAR START -->
-	<nav class="navbar navbar-expand-xl py-2 sticky-top navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg py-2 sticky-top navbar-light bg-white">
 		<div class="container flex-nowrap">
 			<a class="navbar-brand" href="#">
-				<img class="goramen-logo float-start" src="img/goramenlogo.png" alt="goramen-logo">
+				<img class="img-fluid float-start" src="img/goramen-logo.png" alt="goramen logo">
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,38 +29,40 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link" href="#home">Home</a>
+						<a class="nav-link text-nowrap text-center my-auto" href="#home">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#ramen">Ramen</a>
+						<a class="nav-link text-nowrap text-center" href="#ramen">Ramen</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Tsukemen</a>
+						<a class="nav-link text-nowrap text-center" href="#tsukemen">Tsukemen</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Top&nbsp;3</a>
+						<a class="nav-link text-nowrap text-center" href="#top5">Top 5</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Pricing</a>
+						<a class="nav-link text-nowrap text-center" href="#">Pricing</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Team</a>
+						<a class="nav-link text-nowrap text-center" href="#">Team</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">About&nbsp;Us</a>
+						<a class="nav-link text-nowrap text-center" href="#">About Us</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
+						<a class="nav-link text-nowrap text-center" href="#">Contact</a>
+					</li>
+					<li class="nav-item mx-auto">
+						<button class="btn btn-primary ms-lg-3 text-nowrap">Sign Up</button>
 					</li>
 				</ul>
-				<button class="btn btn-primary ms-lg-3">Sign&nbsp;Up</button>
 			</div>
 		</div>
 	</nav>
 	<!-- NAVBAR END -->
 
 	<!-- HOME START -->
-	<div class="home vh-100 d-flex align-items-center" id="home">
+	<div id="home" class="home vh-100 d-flex align-items-center">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-7 mx-auto text-center">
@@ -78,7 +80,7 @@
 	<!-- HOME END -->
 
 	<!-- RAMEN START -->
-	<section id="ramen">
+	<section id="ramen" class="bg-white">
 		<div class="container">
 			<div class="row mb-5">
 				<div class="col-md-8 mx-auto text-center">
@@ -119,9 +121,129 @@
 			</div>
 		</div>
 	</section>
+	<!-- RAMEN END -->
 
+	<!-- TSUKEMEN START-->
+	<section id="tsukemen" class="row w-100 py-0 m-0">
+		<div class="col-img-tsukemen col-lg-6 "></div>
+		<div class="col-lg-6 py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 offset-md-1">
+						<h6 class="text-primary">TSUKEMEN</h6>
+						<h1>What about Tsukemen?</h1>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repellendus quas dolorum
+							minima dicta natus beatae maiores fugiat velit? Aliquam.</p>
 
+						<div class="tsukemen d-flex mt-5">
+							<div class="iconbox me-3">
+								<i class='bx bxs-search-alt-2'></i>
+							</div>
+							<div>
+								<h5>Noodle</h5>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+							</div>
+						</div>
 
+						<div class="tsukemen d-flex">
+							<div class="iconbox me-3">
+								<i class='bx bxs-search-alt-2'></i>
+							</div>
+							<div>
+								<h5>Noodle</h5>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- TSUKEMEN END -->
+
+	<!-- TOP 5 START -->
+	<section id="top5" class="bg-white">
+		<div class="container-fluid">
+			<div class="row mb-5">
+				<div class="col-md-8 mx-auto text-center">
+					<h6 class="text-primary">RECOMMENDATION</h6>
+					<h1>TOP 3 MUST TRY!</h1>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci temporibus vero voluptatum
+						soluta dicta, reiciendis molestias tempora nostrum similique nesciunt?</p>
+				</div>
+			</div>
+			<div class="row g-3">
+				<div class="col-lg-4 col-sm-6">
+					<div class="top5">
+						<img src="img/top5/mutekiya.jpg" class="img-fluid" alt="###">
+						<div class="overlay">
+							<div>
+								<h4 class="text-white">Mutekiya【無敵家】</h4>
+								<h6 class="text-white">Minami Ikebukuro</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="top5">
+						<img src="img/top5/mutekiya.jpg" class="img-fluid" alt="###">
+						<div class="overlay">
+							<div>
+								<h4 class="text-white">Test Title</h4>
+								<h6 class="text-white">Test Desc.</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="top5">
+						<img src="img/top5/mutekiya.jpg" class="img-fluid" alt="###">
+						<div class="overlay">
+							<div>
+								<h4 class="text-white">Test Title</h4>
+								<h6 class="text-white">Test Desc.</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="top5">
+						<img src="img/top5/mutekiya.jpg" class="img-fluid" alt="###">
+						<div class="overlay">
+							<div>
+								<h4 class="text-white">Test Title</h4>
+								<h6 class="text-white">Test Desc.</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="top5">
+						<img src="img/top5/mutekiya.jpg" class="img-fluid" alt="###">
+						<div class="overlay">
+							<div>
+								<h4 class="text-white">Test Title</h4>
+								<h6 class="text-white">Test Desc.</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="top5">
+						<img src="img/top5/mutekiya.jpg" class="img-fluid" alt="###">
+						<div class="overlay">
+							<div>
+								<h4 class="text-white">Test Title</h4>
+								<h6 class="text-white">Test Desc.</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- TOP 5 END -->
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
