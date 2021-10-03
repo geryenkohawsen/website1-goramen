@@ -231,5 +231,17 @@ form .form-control {
     background-color: rgba(0,0,0,0.02);
 }
 
+/* FOOTER */
+.footer-top {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: var(--dark);
+}
 
+.footer-top a {
+    color: var(--body);
+}
 
+.footer-top a:hover {
+    color: #fff;
+}
