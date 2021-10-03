@@ -33,7 +33,6 @@ a {
 }
 
 /* NAVBAR */
-
 .navbar {
     box-shadow: var(--box-shadow);
 }
@@ -113,7 +112,7 @@ section {
 
 .card-effect:hover {
     box-shadow: none;
-    transform: translateY(15px);
+    transform: translateY(10px);
 }
 
 .iconbox {
@@ -172,3 +171,65 @@ section {
 .top5:hover img {
     transform: scale(1.1);
 }
+
+/* TOUR */
+#tour {
+    background-color: var(--light);
+}
+
+.tour i {
+    font-size: 20px;
+    color: var(--primary);
+}
+
+.tour ul li {
+    margin-top: 8px;
+}
+
+/* TEAM */
+.team img {
+    border-radius: 100%;
+    max-width: 180px;
+
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+.social-icons a {
+    width: 34px;
+    height: 34px;
+    background-color: var(--primary);
+    border-radius: 2px solid var(--primary);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-left: 5px;
+    transition: all 0.4s ease;
+    border: 2px solid var(--primary);
+}
+
+.social-icons a:hover {
+    color: var(--primary);
+    background-color: transparent;
+    border-color: var(--primary);
+}
+
+/* BLOG */
+
+/* CONTACT */
+form input.form-control {
+    height: 56px;
+}
+
+form .form-control {
+    border: transparent;
+    border-radius: 0;
+    background-color: rgba(0,0,0,0.02);
+}
+
+
+
