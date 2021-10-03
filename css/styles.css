@@ -245,3 +245,7 @@ form .form-control {
 .footer-top a:hover {
     color: #fff;
 }
+
+.footer-bottom {
+    background-color: #242933;
+}
