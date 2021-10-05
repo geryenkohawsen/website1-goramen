@@ -32,6 +32,34 @@ a {
     border-radius: 0;
 }
 
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(208, 41, 27, 0.5); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 40px; /* Increase font size */
+    line-height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+  
+#myBtn:hover {
+    background-color: rgba(208, 41, 27, 0.8);
+}
+
+.cut-text { 
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 /* NAVBAR */
 .navbar {
     box-shadow: var(--box-shadow);
@@ -40,6 +68,10 @@ a {
 .navbar .nav-link {
     font-size: 16px;
     font-weight: 700;
+}
+
+.d-lg-none hr {
+    max-width: 180px;
 }
 
 /* HOME */
