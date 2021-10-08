@@ -40,7 +40,7 @@ a {
     z-index: 99; 
     border: none;
     outline: none;
-    background-color: rgba(208, 41, 27, 0.5); 
+    background-color: rgba(13, 110, 253, 0.5); 
     color: white; 
     cursor: pointer; 
     border-radius: 10px; 
@@ -51,7 +51,7 @@ a {
 }
   
 #myBtn:hover {
-    background-color: rgba(208, 41, 27, 0.8);
+    background-color: rgba(13, 110, 253, 0.8);
 }
 
 .cut-text { 
